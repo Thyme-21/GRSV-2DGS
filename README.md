@@ -28,6 +28,13 @@ unzip -d mipnerf360 360_v2.zip
 # Generate sparse point cloud using COLMAP (limited views) for MipNeRF-360
 python tools/colmap_360.py
 ```
+# Download RawNeRF dataset
+wget http://storage.googleapis.com/gresearch/refraw360/raw.zip
+unzip -d mipnerf360 360_v2.zip
+
+# Generate sparse point cloud using COLMAP (limited views) for RawNeRF
+python tools/colmap_llff.py
+```
 
 ## Training
 To train a scene, simply use
