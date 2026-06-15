@@ -1,4 +1,4 @@
-name: CLG-2DGS
+name: GRSV-2DGS
 channels:
   - pytorch
   - nvidia
