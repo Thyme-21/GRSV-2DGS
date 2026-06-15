@@ -31,7 +31,7 @@ unzip -d mipnerf360 360_v2.zip
 # Generate sparse point cloud using COLMAP (limited views) for MipNeRF-360
 python tools/colmap_360.py
 
-Generate sparse point cloud using COLMAP (limited views) for RawNeRF
+# Generate sparse point cloud using COLMAP (limited views) for RawNeRF
 python tools/colmap_llff.py
 ```
 
