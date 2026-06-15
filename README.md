@@ -21,17 +21,17 @@ In the data preparation stage, we first reconstruct sparse-view inputs using **S
 mkdir dataset
 cd dataset
 
-# Download MipNeRF-360 dataset
+# Download MipNeRF-360 dataset and RawNeRF dataset
 wget http://storage.googleapis.com/gresearch/refraw360/360_v2.zip
+unzip -d mipnerf360 360_v2.zip
+
+wget http://storage.googleapis.com/gresearch/refraw360/raw.zip
 unzip -d mipnerf360 360_v2.zip
 
 # Generate sparse point cloud using COLMAP (limited views) for MipNeRF-360
 python tools/colmap_360.py
-```
 
-Download RawNeRF dataset
-wget http://storage.googleapis.com/gresearch/refraw360/raw.zip
-unzip -d mipnerf360 360_v2.zip
+Generate sparse point cloud using COLMAP (limited views) for RawNeRF
 python tools/colmap_llff.py
 ```
 
