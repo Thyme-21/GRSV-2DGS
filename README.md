@@ -38,7 +38,7 @@ python tools/colmap_llff.py
 ## Training
 To train a scene, simply use
 ```bash
-python train.py -s <path to COLMAP or NeRF Synthetic dataset>
+python train.py -s <path to COLMAP or NeRF Synthetic dataset> -m <output> --n_views 12 --eval
 ```
 Commandline arguments for regularizations
 ```bash
@@ -66,7 +66,7 @@ If these arguments are not specified, the script will automatically estimate the
 ### Unbounded Mesh Extraction
 To export a mesh with an arbitrary size, we devised an unbounded TSDF fusion with space contraction and adaptive truncation.
 ```bash
-python render.py -m <path to pre-trained model> -s <path to COLMAP dataset> --mesh_res 1024
+python render.py -m <path to pre-trained model> -s <path to COLMAP dataset> --mesh_res 1024 --n_views 12 --eval
 
 **Tips for adjusting the parameters on your own dataset:**
 - For unbounded/large scenes, we suggest using mean depth, i.e., ``depth_ratio=0``,  for less "disk-aliasing" artifacts.
