@@ -1,6 +1,6 @@
 This is the official repository for our paper "GRSV-2DGS : Geometry-Reliable Sparse-View 2D Gaussian Splatting for Surface-Aware Novel View Synthesis"
 
-![result](assets/0.png)
+![result](assets/2.jpg)
 
 ## Installation
 
